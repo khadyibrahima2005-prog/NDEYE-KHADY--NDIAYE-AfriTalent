@@ -1,0 +1,9 @@
+[33m694a318[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{0}: reset: moving to HEAD~1
+[33ma405d20[m[33m ([m[1;31morigin/main[m[33m)[m HEAD@{1}: reset: moving to HEAD~1
+[33m9bb1a44[m HEAD@{2}: reset: moving to HEAD~1
+[33m738c249[m HEAD@{3}: commit: Mise a jour du projet
+[33m9bb1a44[m HEAD@{4}: reset: moving to HEAD
+[33m9bb1a44[m HEAD@{5}: commit: HTML : struture complete des 5 pages avec sections et contenu texte
+[33ma405d20[m[33m ([m[1;31morigin/main[m[33m)[m HEAD@{6}: commit: HTML : structure complète des 5 pages avec sections et contenu texte
+[33m694a318[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{7}: Branch: renamed refs/heads/master to refs/heads/main
+[33m694a318[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{9}: commit (initial): Init : création du dépôt, arborescence des fichiers et structure
