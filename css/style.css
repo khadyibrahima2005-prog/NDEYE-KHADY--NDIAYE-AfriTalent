@@ -1,0 +1,219 @@
+/* =========================
+   VARIABLES CSS
+========================= */
+:root {
+    /* Couleurs principales */
+    --color-primary: #0d6efd;
+    --color-secondary: #198754;
+    --color-accent: #ffc107;
+
+    /* Couleurs neutres */
+    --color-text: #212529;
+    --color-bg: #ffffff;
+    --color-bg-light: #f8f9fa;
+
+    /* Typographie */
+    --font-title: "Montserrat", sans-serif;
+    --font-body: "Poppins", sans-serif;
+
+    /* Layout */
+    --radius: 12px;
+    --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    --section-spacing: 80px;
+    --card-spacing: 24px;
+}
+
+/* =========================
+   RESET GLOBAL
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* =========================
+   BODY GLOBAL
+========================= */
+body {
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    padding-top: 80px; /* espace pour navbar fixed */
+}
+
+/* =========================
+   IMAGES
+========================= */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+section {
+    padding: var(--section-spacing) 0;
+}
+
+/* =========================
+   TYPOGRAPHIE
+========================= */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-title);
+    font-weight: 700;
+    --color-text: #212529;
+    line-height: 1.3;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 2.3rem;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+    background-color: var(--color-bg);
+    box-shadow: var(--shadow);
+    padding: 1rem 0;
+    transition: all 0.3s ease;
+}
+
+/* Logo */
+.navbar-brand {
+    font-family: var(--font-title);
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: var(--color-primary);
+}
+
+/* Liens navbar */
+.navbar {
+    background-color: white;
+}
+
+.nav-link {
+    color: #212529;
+}
+
+.nav-link:hover {
+    color: var(--color-primary);
+}
+
+/* Effet scroll (utilisé en JS commit 6) */
+.navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================
+   BOUTONS
+========================= */
+.btn-primary-custom {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 12px 24px;
+    border-radius: var(--radius);
+    border: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-primary-custom:hover {
+    background-color: var(--color-secondary);
+    transform: translateY(-2px);
+}
+
+/* =========================
+   CARTES
+========================= */
+.card {
+    border: none;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    background-color: var(--color-bg);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* =========================
+   UTILITAIRES
+========================= */
+.text-primary {
+    color: var(--color-primary);
+}
+
+.bg-light {
+    background-color: var(--color-bg-light) ;
+}
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 100vh;
+    background-image: url("../images/hero.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+    @media (max-width: 768px) {
+
+    body {
+        padding-top: 70px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+}
