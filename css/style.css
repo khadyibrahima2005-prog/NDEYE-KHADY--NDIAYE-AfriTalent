@@ -217,3 +217,159 @@ p {
     }
 
 }
+/* =========================
+
+   HERO
+
+========================= */
+
+.hero {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+.hero h1 {
+
+    font-size: 4rem;
+
+    font-weight: 800;
+
+}
+
+.hero p {
+
+    font-size: 1.2rem;
+
+}
+
+/* =========================
+
+   BENTO GRID
+
+========================= */
+
+.bento-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+}
+
+.bento-card {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: var(--radius);
+
+    box-shadow: var(--shadow);
+
+}
+
+.large {
+
+    grid-column: span 2;
+
+   
+
+}
+
+.wide {
+
+    grid-column: span 2;
+
+}
+@media (max-width: 768px) {
+
+    .bento-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .large,
+    .wide {
+        grid-column: span 1;
+    }
+
+}
+
+/* =========================
+
+   CATEGORIES
+
+========================= */
+
+.category-card {
+
+    transition: all 0.3s ease;
+
+}
+
+.category-card:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+
+}
+
+/* =========================
+   TÉMOIGNAGES
+========================= */
+
+.testimonials {
+    padding: 80px 0;
+}
+
+.testimonial-card {
+    background: white;
+    max-width: 700px;
+    margin: auto;
+    padding: 40px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    text-align: center;
+}
+
+.testimonial-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.testimonial-card h5 {
+    font-family: var(--font-title);
+    font-weight: 700;
+}
+
+.testimonial-card .job {
+    color: var(--color-secondary);
+    font-weight: 600;
+}
+
+.stars {
+    font-size: 1.2rem;
+    margin: 15px 0;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    padding: 20px;
+
+}
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
