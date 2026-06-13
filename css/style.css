@@ -480,3 +480,144 @@ p {
         max-width: 1140px;
     }
 }
+/* =========================
+   DARK MODE
+========================= */
+
+.dark-mode,
+.dark-mode body{
+    background-color: #121212;
+    color: #ffffff;
+}
+.dark-mode section {
+
+    background-color: #121212 ;
+
+    color: #ffffff ;
+
+}
+
+.dark-mode .bg-light {
+
+    background-color: #1a1a1a ;
+
+}
+
+.dark-mode .card {
+
+    background-color: #222 ;
+
+    color: #fff ;
+
+}
+
+.dark-mode h1,
+
+.dark-mode h2,
+
+.dark-mode h3,
+
+.dark-mode h4,
+
+.dark-mode h5,
+
+.dark-mode h6,
+
+.dark-mode p {
+
+    color: #fff ;
+
+}
+
+.dark-mode .text-muted {
+
+    color: #ccc ;
+}
+
+.dark-mode .card {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.dark-mode .navbar {
+    background-color: #1a1a1a ;
+}
+.dark-mode .testimonial-card {
+
+    background-color: #1e1e1e;
+
+    color: white;
+
+}
+
+.dark-mode .testimonial-card p,
+
+.dark-mode .testimonial-card h5 {
+
+    color: white;
+}
+
+/* =========================
+   NAVBAR SCROLL
+========================= */
+
+.navbar.scrolled {
+    padding: 0.5rem 0;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* =========================
+   BACK TO TOP
+========================= */
+
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 999;
+}
+/* =========================
+   DARK MODE 
+========================= */
+
+.dark-mode .bg-light,
+.dark-mode .bg-white {
+    background-color: #1e1e1e ;
+}
+
+.dark-mode section,
+.dark-mode footer {
+    color: white ;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6,
+.dark-mode p,
+.dark-mode a,
+.dark-mode li,
+.dark-mode span {
+    color: white ;
+}
+
+.dark-mode footer {
+    background-color: #000;
+}
+.dark-mode .list-group-item {
+    background-color: #222 ;
+    color: white ;
+    border-color: #444 ;
+}
+.dark-mode .bg-light {
+    background-color: #1a1a1a !important;
+    color: white !important;
+}
+.dark-mode .bg-light h2,
+.dark-mode .bg-light h4,
+.dark-mode .bg-light p {
+    color: white !important;
+}
