@@ -103,7 +103,7 @@
 
                     </h2>
 
-                    <form>
+                    <form id="contactForm">
 
                         <div class="mb-3">
 
@@ -116,7 +116,9 @@
                             <input
                                 type="text"
                                 class="form-control"
-                                placeholder="Votre nom">
+                                placeholder="Votre nom"
+                                id="name">
+                                <small id="nameError" class="text-danger"></small>
 
                         </div>
 
@@ -131,7 +133,9 @@
                             <input
                                 type="email"
                                 class="form-control"
-                                placeholder="Votre e-mail">
+                                placeholder="Votre e-mail"
+                                id="email">
+                                <small id="emailError" class="text-danger"></small>
 
                         </div>
 
@@ -146,7 +150,8 @@
                             <input
                                 type="text"
                                 class="form-control"
-                                placeholder="Sujet du message">
+                                placeholder="Sujet du message"
+                                id="subject">
 
                         </div>
 
@@ -161,7 +166,9 @@
                             <textarea
                                 class="form-control"
                                 rows="5"
-                                placeholder="Votre message"></textarea>
+                                placeholder="Votre message"
+                                id="message"></textarea>
+                                <small id="messageError" class="text-danger"></small>
 
                         </div>
 
@@ -172,6 +179,7 @@
                             Envoyer
 
                         </button>
+                        <div id="successMessage"></div>
 
                     </form>
 

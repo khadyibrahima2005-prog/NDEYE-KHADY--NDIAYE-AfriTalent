@@ -127,3 +127,89 @@ const sectionObserver = new IntersectionObserver(entries => {
 sections.forEach(section => {
     sectionObserver.observe(section);
 });
+const filter = document.getElementById("filterCategory");
+
+console.log("Filtre trouve :", filter);
+
+if(filter){
+
+    filter.addEventListener("change", () => {
+
+        const value = filter.value;
+
+        const cards = document.querySelectorAll(".freelance-card");
+
+        cards.forEach(card => {
+
+            if(value === "all" || card.dataset.category === value){
+                card.style.display = "block";
+            } else {
+                card.style.display = "none";
+            }
+
+        });
+
+    });
+
+}
+const form = document.getElementById("contactForm");
+
+if(form){
+
+form.addEventListener("submit", (e) => {
+
+e.preventDefault();
+
+let valid = true;
+
+const name = document.getElementById("name");
+const email = document.getElementById("email");
+const message = document.getElementById("message");
+
+document.getElementById("nameError").textContent = "";
+document.getElementById("emailError").textContent = "";
+document.getElementById("messageError").textContent = "";
+
+ name.classList.remove("is-invalid");
+    email.classList.remove("is-invalid");
+    message.classList.remove("is-invalid");
+
+
+if(name.value.trim() === ""){
+document.getElementById("nameError").textContent =
+"Le nom est obligatoire";
+name.classList.add("is-invalid");
+valid = false;
+
+ 
+ name.classList.remove("is-invalid");
+email.classList.remove("is-invalid");
+message.classList.remove("is-invalid");
+}
+
+const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+if(!regex.test(email.value)){
+document.getElementById("emailError").textContent =
+"Email invalide";
+email.classList.add("is-invalid");
+valid = false;
+}
+
+if(message.value.trim().length < 20){
+document.getElementById("messageError").textContent =
+"Le message doit contenir au moins 20 caractères";
+message.classList.add("is-invalid");
+valid = false;
+}
+
+if(valid){
+document.getElementById("successMessage").innerHTML =
+'<div class="alert alert-success">Message envoyé avec succès !</div>';
+
+form.reset();
+}
+
+});
+
+}

@@ -124,18 +124,7 @@ Découvrez des talents qualifiés partout en Afrique
 
 <div class=" col-12 col-md-8">
 
-<div class="input-group">
 
-<input
-type="text"
-class="form-control"
-placeholder="Rechercher un freelance">
-
-<button class="btn btn-success">
-
-Rechercher
-
-</button>
 
 </div>
 
@@ -143,8 +132,23 @@ Rechercher
 
 </div>
 
-</div>
+</section>
+<section class="pb-4">
+    <div class="container">
 
+        <select id="filterCategory" class="form-select">
+
+            <option value="all">Tous les freelances</option>
+            <option value="web">Développement Web</option>
+            <option value="design">UI/UX Design</option>
+            <option value="cloud">Cloud</option>
+            <option value="mobile">Mobile</option>
+            <option value="marketing">Marketing</option>
+            <option value="data">Data</option>
+
+        </select>
+
+    </div>
 </section>
 
 <!-- FREELANCES -->
@@ -155,7 +159,7 @@ Rechercher
 
 <div class="row g-4">
 
-<div class=" col-12 col-md-6 col-lg-4">
+<div class=" col-12 col-md-6 col-lg-4 freelance-card" data-category="web">
 
 <div class="card h-100">
 
@@ -195,7 +199,7 @@ Voir profil
 
 </div>
 
-<div class=" col-12 col-md-6 col-lg-4">
+<div class=" col-12 col-md-6 col-lg-4 freelance-card" data-category="design">
 
 <div class="card h-100">
 
@@ -235,7 +239,7 @@ Voir profil
 
 </div>
 
-<div class= " col-12 col-md-6 col-lg-4">
+<div class= " col-12 col-md-6 col-lg-4 freelance-card" data-category="cloud">
 
 <div class="card h-100">
 
@@ -275,7 +279,7 @@ Voir profil
 
 </div>
 
-<div class=" col-12 col-md-6 col-lg-4">
+<div class=" col-12 col-md-6 col-lg-4 freelance-card" data-category="mobile">
 
 <div class="card h-100">
 
@@ -315,7 +319,7 @@ Voir profil
 
 </div>
 
-<div class=" col-12 col-md-6 col-lg-4">
+<div class=" col-12 col-md-6 col-lg-4 freelance-card" data-category="marketing">
 
 <div class="card h-100">
 
@@ -355,7 +359,7 @@ Voir profil
 
 </div>
 
-<div class=" col-12 col-md-6 col-lg-4">
+<div class=" col-12 col-md-6 col-lg-4 freelance-card" data-category="data">
 
 <div class="card h-100">
 
