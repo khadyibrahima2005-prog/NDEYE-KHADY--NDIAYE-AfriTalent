@@ -54,3 +54,76 @@ backToTop.addEventListener("click", () => {
     });
 
 });
+// COMPTEURS ANIMÉS
+
+const counters = document.querySelectorAll(".counter");
+
+const counterObserver = new IntersectionObserver(entries => {
+
+    entries.forEach(entry => {
+
+        if(entry.isIntersecting){
+
+            const counter = entry.target;
+            const target = +counter.dataset.target;
+
+            let current = 0;
+
+            const increment = target / 100;
+
+            const updateCounter = () => {
+
+                if(current < target){
+
+                    current += increment;
+
+                    counter.innerText = Math.ceil(current);
+
+                    requestAnimationFrame(updateCounter);
+
+                }else{
+
+                    counter.innerText = target;
+
+                }
+
+            };
+
+            updateCounter();
+
+            counterObserver.unobserve(counter);
+
+        }
+
+    });
+
+});
+
+counters.forEach(counter => {
+    counterObserver.observe(counter);
+});
+
+
+// FADE IN
+
+const sections = document.querySelectorAll(".fade-section");
+
+const sectionObserver = new IntersectionObserver(entries => {
+
+    entries.forEach(entry => {
+
+        if(entry.isIntersecting){
+
+            entry.target.classList.add("show");
+
+        }
+
+    });
+
+}, {
+    threshold: 0.2
+});
+
+sections.forEach(section => {
+    sectionObserver.observe(section);
+});

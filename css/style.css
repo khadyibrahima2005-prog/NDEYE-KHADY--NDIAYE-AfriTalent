@@ -613,11 +613,23 @@ p {
     border-color: #444 ;
 }
 .dark-mode .bg-light {
-    background-color: #1a1a1a !important;
-    color: white !important;
+    background-color: #1a1a1a ;
+    color: white ;
 }
 .dark-mode .bg-light h2,
 .dark-mode .bg-light h4,
 .dark-mode .bg-light p {
-    color: white !important;
+    color: white ;
+}
+/* COMMIT 7 */
+
+.fade-section{
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.fade-section.show{
+    opacity: 1;
+    transform: translateY(0);
 }
