@@ -580,15 +580,31 @@ p {
 /* =========================
    DARK MODE 
 ========================= */
+.dark-mode,
+.dark-mode body{
+    background-color: #121212;
+    color: #ffffff;
+}
+.dark-mode section {
 
-.dark-mode .bg-light,
-.dark-mode .bg-white {
-    background-color: #1e1e1e ;
+    background-color: #121212 ;
+
+    color: #ffffff ;
+
 }
 
-.dark-mode section,
-.dark-mode footer {
-    color: white ;
+.dark-mode .bg-light {
+
+    background-color: #1a1a1a ;
+
+}
+
+.dark-mode .card {
+
+    background-color: #222 ;
+
+    color: #fff ;
+
 }
 
 .dark-mode h1,
@@ -619,6 +635,43 @@ p {
 .dark-mode .bg-light h2,
 .dark-mode .bg-light h4,
 .dark-mode .bg-light p {
+    color: white ;
+}
+.dark-mode .bento-card {
+    background-color: #1e1e1e ;
+    color: white ;
+}
+
+.dark-mode .category-card {
+    background-color: #1e1e1e ;
+    color: white ;
+}
+
+.dark-mode .testimonials {
+    background-color: #121212 ;
+}
+
+.dark-mode .bg-white {
+    background-color: #121212 ;
+}
+.dark-mode .category-card,
+
+.dark-mode .bento-card {
+
+    background-color: #1e1e1e;
+
+    color: white;
+
+}
+
+.dark-mode .category-card h3,
+
+.dark-mode .category-card p,
+
+.dark-mode .bento-card h3,
+
+.dark-mode .bento-card p {
+
     color: white ;
 }
 /* COMMIT 7 */

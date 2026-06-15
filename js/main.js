@@ -18,6 +18,8 @@ toggleBtn.addEventListener("click", () => {
 
 });
 
+
+
 // NAVBAR SCROLL
 
 window.addEventListener("scroll", () => {
